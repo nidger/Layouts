@@ -36,10 +36,6 @@ button {
   --content-gap: 1rem;
 }
 
-
-
-
-
 .hero {
   position: relative;
   height: 100vh;
@@ -59,7 +55,6 @@ button {
   height: 100%;
   width: 100%;
 }
-
 
 .header {
   position: absolute;
@@ -93,7 +88,6 @@ button {
   gap: var(--content-gap);
 }
 
-
 /* Media Query for to move hero__content left for viewports below 900px */
 @media (max-width: 900px) {
   .hero__content {
@@ -108,13 +102,15 @@ button {
   }
 }
 
-
+.hero__image {
+  z-index: 1;
+}
 
 .h1 {
   font-size: 1.8rem;
-    font-weight: 100;
+  font-weight: 100;
   text-transform: uppercase;
-
+  mix-blend-mode: difference;
 }
 
 .hero__text {
