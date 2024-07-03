@@ -54,6 +54,7 @@ button:hover {
 :root {
   --padding-s: 1rem;
   --content-gap: 1rem;
+  --grid-gap--s: 1rem;
 }
 
 .hero {
@@ -62,7 +63,8 @@ button:hover {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(12, 1fr);  
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: var(--grid-gap--s);
   justify-content: center;
   align-items: center;
   padding-left: var(--padding-s);
@@ -100,8 +102,8 @@ button:hover {
 }
 
 .hero__content {  
-  grid-column: 3/8;
-  grid-row: 3/4;
+  grid-column: 2/6;
+  grid-row: 4/5;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -135,6 +137,20 @@ button:hover {
 
 .hero__text {
   max-width: 40ch;
+}
+
+.accent-heading {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgb(215, 215, 215);
+  letter-spacing: 0.1em;
+}
+
+.hero__credit {  
+  z-index: 3;
+  grid-column: 9/12;
+  grid-row: 11/11;
 }
 
 .intro {
