@@ -7,7 +7,12 @@ body, html {
 }
 
 
+.nav-container {
+  display: flex;  
+  width: 100%;
+  justify-content: space-between  ;
 
+}
 
 .nav-link {
   color: white;
