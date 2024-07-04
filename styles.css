@@ -156,6 +156,58 @@ button:hover {
   grid-row: 11/11;
 }
 
+
+.hero-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.hero-home__content-left {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  border: solid 1px red;
+}
+
+.hero-home__upper {
+  flex: 1;
+  border: solid 1px red;
+  background-color: lightgray;
+}
+
+.hero-home__middle {
+  flex: 1;
+  background-color: wheat;
+  border: solid 1px red;
+}
+
+.hero-home__lower {
+  flex: 1;
+  background-color: wheat;
+  border: solid 1px red;
+}
+
+
+.hero-home__content-right {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(64, 0, 255);
+}
+
+.hero-home___image-wrapper {
+  height: 100%;
+  border: solid 5px rgb(255, 0, 144);
+}
+
+.hero-home__image {
+  height: 100%;
+}
+
 .intro {
   height: 100vh;
 }
